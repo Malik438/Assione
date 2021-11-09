@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="45dp"
+        />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="8dp"
+      android:weightSum="100"
+      >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="Name : "
+        android:layout_weight="30"
+         />
+      <EditText
+          android:layout_width="0dp"
+          android:layout_height="45dp"
+          android:layout_weight="70"
+          android:inputType="text"
+          android:id="@+id/name"
+          />
+      
+      
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="8dp"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Weghit : "
+            android:layout_weight="30"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="70"
+            android:inputType="number"
+            android:id="@+id/weghit"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="8dp"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="height : "
+            android:layout_weight="30"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="70"
+            android:inputType="number"
+
+            android:id="@+id/height"
+             />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="8dp"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Gender : "
+            android:layout_weight="30"
+            />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="70"
+            android:id="@+id/Gender"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get start"
+        android:onClick="viewstartactivityOnClik"
+        />
+</LinearLayout>
